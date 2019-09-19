@@ -27,8 +27,8 @@ class Owner
       dog.owner == self 
     end 
   end 
-  def buy_cat 
-    @cats
+  def buy_cat(name) 
+    Cat.new
   end 
   def walk_dogs 
     mood = "happy"
