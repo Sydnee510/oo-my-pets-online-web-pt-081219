@@ -36,7 +36,7 @@ class Owner
   def walk_dogs
     #(name) 
    # Dog.new(name,self)
-   Dog.each do |dog|
+   Dog.all.select do |dog|
     dog.mood = "happy"
   end
   end
