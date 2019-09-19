@@ -39,6 +39,7 @@ class Owner
    dog.each do |dog|
     dog.mood = "happy"
   end
+  end
 end
 # class Owner
 #   attr_accessor :pets
