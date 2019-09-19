@@ -30,6 +30,7 @@ class Owner
   def buy_cat(name) 
     Cat.new(name, self)
   end 
+  def buy_
   def walk_dogs 
     mood = "happy"
   end
