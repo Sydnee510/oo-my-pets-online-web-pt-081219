@@ -50,6 +50,7 @@ class Owner
   end
     Cat.all.select do |cat|
     cat.mood = "nervous"
+    cat.owner = nil
   end
   end 
   def list_pets
