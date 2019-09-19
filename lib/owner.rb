@@ -21,6 +21,7 @@ class Owner
     Cat.all.select do |cat|
       cats.owner == self
     end
+  end
 end
 # class Owner
 #   attr_accessor :pets
