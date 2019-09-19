@@ -30,6 +30,8 @@ class Owner
   def buy_cat 
     
   end 
+  def walk_dogs 
+    
 end
 # class Owner
 #   attr_accessor :pets
