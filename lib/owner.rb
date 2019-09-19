@@ -45,8 +45,9 @@ class Owner
     end 
   end
   def sell_pets
-    Dog.new(name,self)
-    Cat.new(name,self)
+    #Dog.new(name,self)
+    #Cat.new(name,self)
+    Dog.all.select do |dog|
     dog.mood = "nervous"
     cat.mood = "nervous"
   end 
