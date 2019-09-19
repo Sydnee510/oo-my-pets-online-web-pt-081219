@@ -1,3 +1,64 @@
 class Owner
-  # code goes here
+  attr_accessor :say_species
+  attr_reader :name, :species
+@@all = []
+  def initialize(name)
+    @name = name 
+    @species = "human"
+    @say_species = "I am a human."
+    @@all << self
+  end
+  def self.all 
+    @@all
+  end 
+  def self.count 
+    all.count 
+  end
+  def self.reset_all
+    all.clear
+  end
+  def cats 
+    Cat.all.select do |cat|
+      cats.owner == self
+    end
 end
+# class Owner
+#   attr_accessor :pets
+#   attr_reader  :name, :species
+#   @@all = []
+#   @@pets = {:dogs => [], :cats => []}
+#   def initialize(name)
+#     @name = name 
+#     @species = "human"
+#   # @pets = {:dogs => [], :cats => []}
+#     @@all << self
+#   end
+  
+#   def self.all 
+#     @@all 
+#   end
+#   def say_species
+#     "I am a #{@species}."
+#   end
+#   def self.count 
+#     @@all.length
+#   end
+#   def self.reset_all
+#     @@all.clear 
+#   end
+#   def buy_cat(cat)
+#   @@pets[:cats] << Cat.new(cat)
+# end
+# def buy_dog(dog)
+#   @@pets[:dogs] << Dog.new(dog)
+# end 
+
+# def walk_dogs
+#   @@pets[:dog].each do |dog|
+#     dog.moods = "happy"
+#   end 
+# end 
+# def list_pets
+#   "I have #{pets[:cats].count} cats. I have #{pets[:dogs].count} dogs."
+# end 
+# end
