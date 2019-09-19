@@ -33,7 +33,7 @@ class Owner
   def buy_dog(name)
     Dog.new(name,self)
   end
-  def walk_dogs 
+  def walk_dogs(mood) 
     Dog.new(name,self)
     @mood = "happy"
   end
