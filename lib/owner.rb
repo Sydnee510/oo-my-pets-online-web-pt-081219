@@ -33,7 +33,8 @@ class Owner
   def buy_dog(name)
     Dog.new(name,self)
   end
-  def walk_dogs(name) 
+  def walk_dogs
+    #(name) 
    # Dog.new(name,self)
     dog.mood = "happy"
   end
