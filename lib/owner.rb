@@ -7,6 +7,7 @@ class Owner
     @species = "human"
     @say_species = "I am a human."
     @@all << self
+    @mood = "nervous"
   end
   def self.all 
     @@all
@@ -44,7 +45,7 @@ class Owner
     end 
   end
   def sell_pets
-    self.each { |o| expect(o.mood).to eq("nervous") }
+    @mood
   end 
   def list_pets
     "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
