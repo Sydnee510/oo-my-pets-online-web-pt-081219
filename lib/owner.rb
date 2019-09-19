@@ -43,6 +43,8 @@ class Owner
       cat.mood = "happy"
     end 
   end
+  def sell_pets 
+  end 
 end
 # class Owner
 #   attr_accessor :pets
