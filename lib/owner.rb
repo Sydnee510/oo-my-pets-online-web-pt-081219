@@ -35,7 +35,6 @@ class Owner
   end
   def walk_dogs 
     Dog.new(name,self)
-    Dog.moods 
   end
 end
 # class Owner
