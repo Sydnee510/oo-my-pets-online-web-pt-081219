@@ -50,7 +50,9 @@ class Owner
     Dog.all.select do |dog|
     dog.mood = "nervous"
   end
+    Cat.all.select do |cat|
     cat.mood = "nervous"
+  end
   end 
   def list_pets
     "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
