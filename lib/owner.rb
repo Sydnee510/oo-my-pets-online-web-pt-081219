@@ -28,7 +28,7 @@ class Owner
     end 
   end 
   def buy_cat 
-    
+    @cats
   end 
   def walk_dogs 
     
